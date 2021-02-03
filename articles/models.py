@@ -7,7 +7,9 @@ class Article(models.Model):
     body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
 
-#show the title when showing an instance
-def __str__(self):
-    return self.title
+    #show the title when showing an instance
+    def __str__(self):
+        return self.title
 
+    def snippet(self):
+        return self.body[:50] + '...'
