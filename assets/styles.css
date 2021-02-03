@@ -1,3 +1,13 @@
 body {
     background-color: aquamarine;
 }
+
+.logo {
+    width: 600px;
+    height: 120px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
